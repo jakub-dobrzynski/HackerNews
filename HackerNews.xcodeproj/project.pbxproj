@@ -11,6 +11,10 @@
 		04D3C68526B0242B0041DEC5 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04D3C68426B0242B0041DEC5 /* ContentView.swift */; };
 		04D3C68726B0242D0041DEC5 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 04D3C68626B0242D0041DEC5 /* Assets.xcassets */; };
 		04D3C68A26B0242D0041DEC5 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 04D3C68926B0242D0041DEC5 /* Preview Assets.xcassets */; };
+		04D3C69326B0291F0041DEC5 /* NetworkManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04D3C69226B0291F0041DEC5 /* NetworkManager.swift */; };
+		04D3C69526B02A400041DEC5 /* PostData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04D3C69426B02A400041DEC5 /* PostData.swift */; };
+		04D3C69826B809F40041DEC5 /* DetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04D3C69726B809F40041DEC5 /* DetailView.swift */; };
+		04D3C69A26B814480041DEC5 /* WebView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04D3C69926B814480041DEC5 /* WebView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -20,6 +24,11 @@
 		04D3C68626B0242D0041DEC5 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		04D3C68926B0242D0041DEC5 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		04D3C68B26B0242D0041DEC5 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		04D3C69226B0291F0041DEC5 /* NetworkManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkManager.swift; sourceTree = "<group>"; };
+		04D3C69426B02A400041DEC5 /* PostData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostData.swift; sourceTree = "<group>"; };
+		04D3C69726B809F40041DEC5 /* DetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailView.swift; sourceTree = "<group>"; };
+		04D3C69926B814480041DEC5 /* WebView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WebView.swift; sourceTree = "<group>"; };
+		04D3C69B26B815E10041DEC5 /* Hacker.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = Hacker.entitlements; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -36,7 +45,7 @@
 		04D3C67626B0242B0041DEC5 = {
 			isa = PBXGroup;
 			children = (
-				04D3C68126B0242B0041DEC5 /* Hacker */,
+				04D3C68126B0242B0041DEC5 /* HackerNews */,
 				04D3C68026B0242B0041DEC5 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -49,16 +58,18 @@
 			name = Products;
 			sourceTree = "<group>";
 		};
-		04D3C68126B0242B0041DEC5 /* Hacker */ = {
+		04D3C68126B0242B0041DEC5 /* HackerNews */ = {
 			isa = PBXGroup;
 			children = (
+				04D3C69B26B815E10041DEC5 /* Hacker.entitlements */,
+				04D3C69126B029090041DEC5 /* Models */,
 				04D3C68226B0242B0041DEC5 /* HackerApp.swift */,
-				04D3C68426B0242B0041DEC5 /* ContentView.swift */,
+				04D3C69626B809DA0041DEC5 /* View */,
 				04D3C68626B0242D0041DEC5 /* Assets.xcassets */,
 				04D3C68B26B0242D0041DEC5 /* Info.plist */,
 				04D3C68826B0242D0041DEC5 /* Preview Content */,
 			);
-			path = Hacker;
+			path = HackerNews;
 			sourceTree = "<group>";
 		};
 		04D3C68826B0242D0041DEC5 /* Preview Content */ = {
@@ -67,6 +78,25 @@
 				04D3C68926B0242D0041DEC5 /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		04D3C69126B029090041DEC5 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				04D3C69226B0291F0041DEC5 /* NetworkManager.swift */,
+				04D3C69426B02A400041DEC5 /* PostData.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		04D3C69626B809DA0041DEC5 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				04D3C68426B0242B0041DEC5 /* ContentView.swift */,
+				04D3C69726B809F40041DEC5 /* DetailView.swift */,
+				04D3C69926B814480041DEC5 /* WebView.swift */,
+			);
+			path = View;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -103,7 +133,7 @@
 					};
 				};
 			};
-			buildConfigurationList = 04D3C67A26B0242B0041DEC5 /* Build configuration list for PBXProject "Hacker" */;
+			buildConfigurationList = 04D3C67A26B0242B0041DEC5 /* Build configuration list for PBXProject "HackerNews" */;
 			compatibilityVersion = "Xcode 9.3";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
@@ -138,7 +168,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				04D3C69326B0291F0041DEC5 /* NetworkManager.swift in Sources */,
+				04D3C69526B02A400041DEC5 /* PostData.swift in Sources */,
 				04D3C68526B0242B0041DEC5 /* ContentView.swift in Sources */,
+				04D3C69A26B814480041DEC5 /* WebView.swift in Sources */,
+				04D3C69826B809F40041DEC5 /* DetailView.swift in Sources */,
 				04D3C68326B0242B0041DEC5 /* HackerApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -267,10 +301,11 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = Hacker/Hacker.entitlements;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_ASSET_PATHS = "\"Hacker/Preview Content\"";
+				DEVELOPMENT_ASSET_PATHS = "\"HackerNews/Preview Content\"";
 				ENABLE_PREVIEWS = YES;
-				INFOPLIST_FILE = Hacker/Info.plist;
+				INFOPLIST_FILE = HackerNews/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -278,6 +313,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.JD.Hacker;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTS_MACCATALYST = NO;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -288,10 +324,11 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = Hacker/Hacker.entitlements;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_ASSET_PATHS = "\"Hacker/Preview Content\"";
+				DEVELOPMENT_ASSET_PATHS = "\"HackerNews/Preview Content\"";
 				ENABLE_PREVIEWS = YES;
-				INFOPLIST_FILE = Hacker/Info.plist;
+				INFOPLIST_FILE = HackerNews/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -299,6 +336,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.JD.Hacker;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTS_MACCATALYST = NO;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -307,7 +345,7 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		04D3C67A26B0242B0041DEC5 /* Build configuration list for PBXProject "Hacker" */ = {
+		04D3C67A26B0242B0041DEC5 /* Build configuration list for PBXProject "HackerNews" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				04D3C68C26B0242D0041DEC5 /* Debug */,
